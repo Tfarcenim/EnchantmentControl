@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "tfar.enchantmentcontrol.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "enchantmentcontrol.refmap.json",
+  "mixins": [
+    "EnchantRandomlyMixin",
+    "EnchantedBooksForEmeraldsTradeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
