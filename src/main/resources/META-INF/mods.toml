@@ -33,3 +33,9 @@ description='''
 Control your enchants
 
 '''
+[[dependencies.craftingstation]]
+                   modId="extratags"
+                   mandatory=true
+                   versionRange="[1.0,)"
+                   ordering="NONE"
+                   side="BOTH"
