@@ -9,7 +9,7 @@ import tfar.enchantmentcontrol.EnchantmentControl;
 @Mixin(targets = "net.minecraft.entity.merchant.villager.VillagerTrades$EnchantedBookForEmeraldsTrade")
 public class EnchantedBooksForEmeraldsTradeMixin {
 
-  @ModifyVariable(method = "getOffer",at = @At(value = "INVOKE",
+  @ModifyVariable(method = "getOffer(Lnet/minecraft/entity/Entity;Ljava/util/Random;)Lnet/minecraft/item/MerchantOffer;",at = @At(value = "INVOKE",
           target = "Lnet/minecraft/util/math/MathHelper;nextInt(Ljava/util/Random;II)I"))
   private Enchantment filter(Enchantment old){
   	return EnchantmentControl.filteredRandomTrade();
